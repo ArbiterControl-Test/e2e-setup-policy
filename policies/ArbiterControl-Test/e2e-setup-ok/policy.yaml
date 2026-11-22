@@ -1,5 +1,10 @@
 version: "1.0"
 provenance: { required: false, required_fields: [], artifact_path: ".ai/provenance.json" }
+approver_accounts:
+  - { person: "test reviewer", id: 347217804, login: "arbitercontrol-reviewer" }
+  - { person: "test operator", id: 24735250, login: "deanlockgaard" }
+  - { person: "test approver", id: 356034017, login: "arbitercontrol-approver" }
+  - { person: "test security approver", id: 358497171, login: "arbitercontrol-security" }
 protected_paths:
   - { pattern: "src/**", label: "Source", risk_class: "standard" }
 evidence_requirements:
